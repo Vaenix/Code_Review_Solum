@@ -17,7 +17,7 @@ The app runs locally with:
 Open a terminal:
 
 ```bash
-cd /Users/vaema/Code_Review_Solum/SecC/backend
+cd ../Code_Review_Solum/SecC/backend
 ./venv/bin/uvicorn main:app --host 127.0.0.1 --port 8000
 ```
 
@@ -34,7 +34,7 @@ Expected result: a JSON response with `status: "ok"`.
 Open a second terminal:
 
 ```bash
-cd /Users/vaema/Code_Review_Solum/SecC/frontend
+cd ../Code_Review_Solum/SecC/frontend
 npm run dev
 ```
 
@@ -49,7 +49,7 @@ http://127.0.0.1:4173/
 If you only want to verify production build:
 
 ```bash
-cd /Users/vaema/Code_Review_Solum/SecC/frontend
+cd ../Code_Review_Solum/SecC/frontend
 npm run build
 ```
 
