@@ -1,0 +1,259 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f5f7fb;
+    color: #1f2937;
+}
+
+.app-shell {
+    min-height: 100vh;
+}
+
+.app-header {
+    background: #ffffff;
+    border-bottom: 1px solid #e5e7eb;
+    padding: 20px 28px;
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.app-header h1 {
+    margin: 0 0 6px;
+    font-size: 28px;
+}
+
+.app-header p {
+    margin: 0;
+    color: #6b7280;
+}
+
+.nav-tabs {
+    display: flex;
+    gap: 10px;
+}
+
+.tab {
+    text-decoration: none;
+    color: #374151;
+    padding: 10px 16px;
+    border-radius: 10px;
+    background: #f3f4f6;
+}
+
+.tab.active {
+    background: #dbeafe;
+    color: #1d4ed8;
+    font-weight: 700;
+}
+
+.app-main {
+    padding: 24px 28px;
+}
+
+.page-stack {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.panel {
+    background: #ffffff;
+    border-radius: 16px;
+    padding: 18px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.04);
+}
+
+.filter-bar {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.filter-grid {
+    display: grid;
+    grid-template-columns: repeat(5, minmax(140px, 1fr));
+    gap: 16px;
+}
+
+.filter-grid label {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    font-size: 14px;
+}
+
+.filter-grid input,
+.filter-grid select,
+.filter-actions button {
+    padding: 10px 12px;
+    border: 1px solid #d1d5db;
+    border-radius: 10px;
+    font-size: 14px;
+}
+
+.filter-actions {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.filter-actions button,
+.pagination button {
+    cursor: pointer;
+    background: #111827;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    padding: 10px 14px;
+}
+
+.filter-actions button:hover,
+.pagination button:hover {
+    opacity: 0.92;
+}
+
+.card-grid {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(180px, 1fr));
+    gap: 16px;
+}
+
+.metric-card {
+    background: #ffffff;
+    border-radius: 16px;
+    padding: 18px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.04);
+}
+
+.metric-label {
+    color: #6b7280;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.metric-value {
+    font-size: 28px;
+    font-weight: 700;
+}
+
+.two-col {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.simple-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 14px;
+}
+
+.simple-table th,
+.simple-table td {
+    border-bottom: 1px solid #e5e7eb;
+    text-align: left;
+    padding: 10px 8px;
+    vertical-align: top;
+}
+
+.table-wrap,
+.list-wrap {
+    overflow-x: auto;
+}
+
+.panel-header-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 10px;
+}
+
+.pagination {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.pagination button:disabled {
+    background: #9ca3af;
+    cursor: not-allowed;
+}
+
+.table-footer {
+    margin-top: 12px;
+    color: #6b7280;
+    font-size: 14px;
+}
+
+.subtle-text {
+    margin: 0 0 14px;
+    color: #6b7280;
+    line-height: 1.5;
+}
+
+.stat-list {
+    display: grid;
+    gap: 10px;
+    font-size: 14px;
+}
+
+.chart-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.chart-panel h3,
+.panel h3 {
+    margin-top: 0;
+}
+
+.error-box {
+    background: #fee2e2;
+    color: #991b1b;
+    padding: 12px 14px;
+    border-radius: 12px;
+}
+
+.info-box {
+    background: #eff6ff;
+    color: #1d4ed8;
+    padding: 12px 14px;
+    border-radius: 12px;
+}
+
+@media (max-width: 1100px) {
+    .filter-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .card-grid,
+    .two-col,
+    .chart-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 700px) {
+
+    .app-main,
+    .app-header {
+        padding: 16px;
+    }
+
+    .filter-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .panel-header-row {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
