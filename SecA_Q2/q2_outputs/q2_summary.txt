@@ -1,0 +1,20 @@
+Question B Summary
+==================
+
+Method: log-log elasticity approximation
+Interpretation: more negative values imply stronger price sensitivity.
+
+Overall model ranking:
+- iX: elasticity=-1.802, obs=384
+- 5 Series: elasticity=-1.061, obs=384
+- MINI: elasticity=-0.859, obs=384
+- i4: elasticity=-0.359, obs=384
+- X3: elasticity=-0.056, obs=384
+- 3 Series: elasticity=1.437, obs=384
+- X7: elasticity=2.799, obs=384
+- X5: elasticity=2.842, obs=384
+
+Models with strongest negative elasticity:
+- iX: elasticity=-1.802
+- 5 Series: elasticity=-1.061
+- MINI: elasticity=-0.859

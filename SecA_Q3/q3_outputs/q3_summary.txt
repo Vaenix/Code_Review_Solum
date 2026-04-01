@@ -1,0 +1,13 @@
+Question C Summary
+==================
+
+Peak month for Units_Sold: 6
+Lowest month for Units_Sold: 1
+Peak month for Revenue_EUR: 6
+Lowest month for Revenue_EUR: 10
+
+Region-level macro correlations:
+- China: Units~GDP=0.391, Units~Fuel=-0.540, Revenue~GDP=0.422, Revenue~Fuel=-0.532
+- Europe: Units~GDP=-0.287, Units~Fuel=-0.246, Revenue~GDP=-0.276, Revenue~Fuel=-0.253
+- RestOfWorld: Units~GDP=-0.143, Units~Fuel=0.115, Revenue~GDP=-0.169, Revenue~Fuel=0.241
+- USA: Units~GDP=0.005, Units~Fuel=-0.079, Revenue~GDP=0.011, Revenue~Fuel=-0.049
